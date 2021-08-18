@@ -12,3 +12,19 @@ The password for the next level is stored in a file somewhere under the inhere d
 
 ls, cd, cat, file, du, find
 ## Solution
+first use cd to enter the inhere directory
+```
+cd inhere
+```
+
+next use the find command to locate a file with a size of 1033 bytes
+
+```
+find -size 1033c
+```
+
+this reveals the location of the password file, use cat to read it
+
+```
+cat ./maybehere07/.file2
+```
